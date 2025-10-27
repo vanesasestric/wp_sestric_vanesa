@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme u HTML-u</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- internal CSS -->
+    <!-- <style>
+        h2 {
+            color: blue;
+            background-color: antiquewhite;
+        }
+        body {
+            background-color: beige;
+        }
+    </style> -->
+</head>
+<body>
+    <h2>Forme u HTML-u</h2>
+    <form action="#" method="get">
+        <label for="ime">Unesi ime:</label>
+        <input type="text" id="ime" placeholder="Unesi ime...">
+        <br>
+        <label for="prezime">Unesi prezime:</label>
+        <input type="text" id="prezime">
+        <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass" required>
+        <br>
+        <label for="email">Unesi email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="color">Izaberi boju:</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="date">Izaberi datum:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <p>Izaberi najbolji predmet:</p>
+        <input type="radio" name="predmet" id="Hrvatski">
+        <label for="Hrvatski">Hrvatski</label> <br>
+        <input type="radio" name="predmet" id="Matematika">
+        <label for="Matematika">Matematika</label> <br>
+        <input type="radio" name="predmet" id="Tjelesni">
+        <label for="Tjelesni">Tjelesni</label> <br>
+        <p>U slobodno vrijeme najčešće:</p>
+        <input type="checkbox" name="knjiga" id="knjiga">
+        <label for="knjiga">Čitam knjigu</label> <br>
+        <input type="checkbox" name="izlazak" id="izlazak">
+        <label for="izlazak">Izlazim van</label> <br>
+        <input type="checkbox" name="ucenje" id="ucenje">
+        <label for="ucenje">Učim</label> <br>
+        <input type="checkbox" name="pas" id="pas">
+        <label for="pas">Šetam psa</label> <br>
+        <input type="checkbox" name="glazba" id="glazba">
+        <label for="glazba">Slušam glazbu</label> <br>
+
+        <br>
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+    </form>
+    <h2>Forme-vježba</h2>
+    <form action="#" method="get">
+        <label for="ime">Unesi ime:</label>
+        <input type="text" id="ime">
+        <br>
+        <label for="prezime">Unesi prezime:</label>
+        <input type="text" id="prezime">
+        <br>
+        <input type="radio" name="spol" id="Žensko">
+        <label for="Žensko">Žensko</label> 
+        <input type="radio" name="spol" id="Muško">
+        <label for="Muško">Muško</label> <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="izlet">Unesi destinaciju:</label>
+        <input type="text" id="izlet">
+        <br>
+        <label for="broj">Unesi broj mobitela:</label>
+        <input type="text" id="broj">
+        <br>
+        <input type="submit" value="Pošalji">
+
+    </form>
+</body>
+</html>
