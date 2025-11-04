@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omiljena serija">
+    <meta name="author" content="Vanesa Sestrić">
     <title>Zadaća 2</title>
 </head>
 <body>
+    <h1>GINNY I GEORGIA</h1>
+    <table border="1">
+        <tr>
+            <th colspan="5">GINNY I GEORGIA</th>
+        </tr>
+        <tr>
+            <th>Žanr</th>
+            <th>Sezona</th>
+            <th>Glavni likovi</th>
+            <th colspan="2">Ukupno epizoda, ocjena</th>
+            
+        </tr>
+        <tr>
+            <td rowspan="4">Komedija, drama</td>
+            <td>Prva sezona</td>
+            <td>Ginny Miller, Georgia Miller, Austin Miller</td>
+            <td>10</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Druga sezona</td>
+            <td>Ginny Miller, Georgia Miller, Austin Miller, Marcus Backer, Maxine Backer, Paul Randolph</td>
+            <td>10
+            <td>7</td>
+            </td>
+        </tr>
+        <tr>
+            <td>Treća sezona</td>
+            <td>Ginny Miller, Georgia Miller, Austin Miller, Marcus Backer, Maxine Backer, Paul Randolph, Joe</td>
+            <td>10</td>
+            <td>9</td>
+            </tr>
+        <tr>
+            <td>Četvrta sezona</td>
+            <td>Ginny Miller, Georgia Miller, Austin Miller, Paul Randolph</td>
+            <td>Snima se</td>
+            <td>Snima se</td>
+        </tr>
+    </table>
+    <h2>OBRAZAC</h2>
+    <form action="#" method="get"></form>
+    <label for="ime">Unesi ime:</label>
+    <input type="text" id="ime">
+    <br>
+    <label for="prezime">Unesi prezime:</label>
+    <input type="text" id="prezime">
+    <br>
+    <label for="pass">Unesi lozinku:</label>
+    <input type="password" name="pass" id="pass" required>
+    <br>
+    <p>Odaberi korisnika:</p>
+    <input type="radio" name="korisnik" id="Admin">
+    <label for="Admin">Admin</label>
+    <input type="radio" name="korisnik" id="Guest">
+    <label for="Guest">Guest</label> <br>
     
+    <input type="checkbox" name="prihvaćenje uvjeta korištenja" id="prihvaćenje uvjeta korištenja">
+    <label for="prihvaćenje uvjeta korištenja">Prihvaćenje uvjeta korištenja</label> <br>
+    <input type="submit" value="Pošalji">
+    <input type="reset" value="Poništi">
+    <br>
+    <h2>AUDIO</h2>
+    <audio controls>
+        <source src="../audio_video_domaca_zadaca/test-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>VIDEO:</h2>
+    <video width="320" height="240" controls>
+        <source src="../audio_video_domaca_zadaca/puppy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
 </body>
 </html>
