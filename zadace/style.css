@@ -1,0 +1,78 @@
+h1, h2 {
+    font-family:"Roboto", sans-serif
+}
+
+p, ul, li {
+    font-family: "Open Sans", sans-serif
+}
+
+h1 {
+    font-size: 3rem;  
+    font-weight: 600;  
+}
+
+h2 {
+    color: #4caf50; 
+}
+
+ul {
+    background-color: #eceff1;
+     padding: 20px;
+     border-radius: 10px;
+}
+
+.tekst16 {
+    font-size: 16px;
+    color: #37474f;
+}
+
+.tekst18 {
+    font-size: 18px;
+    color: #546e7a;
+}
+
+.tekst20 {
+    font-size: 20px;
+    color: #78909c;
+}
+
+.markeri li.jedan::marker {
+    content: "☀ "; 
+}
+.markeri li.dva::marker {
+    content: "☂ "; 
+}
+.markeri li.tri::marker {
+    content: "♞ "; 
+}
+.markeri li.cetiri::marker {
+    content: "✈ "; 
+}
+
+.razliciti-markeri li.prvi::marker {
+    content: "★ "; /* zvjezdica */
+}
+
+.razliciti-markeri li.drugi::marker {
+    content: "● "; /* crna točka */
+}
+
+.razliciti-markeri li.treci::marker {
+    content: "◆ "; /* dijamant */
+}
+
+.razliciti-markeri li.cetvrti::marker {
+    content: "➤ "; /* strelica */
+}
+
+.razliciti-markeri li.peti::marker {
+    content: "✿ "; /* cvijet */
+}
+
+.highlight {
+    color: #ffc107; 
+}
+
+#main-title {
+    font-size: 4rem; 
+}
