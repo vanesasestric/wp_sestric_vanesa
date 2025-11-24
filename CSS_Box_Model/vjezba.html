@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model vježba</title>
+    <style>
+        h1, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            width: 450px;
+            height: 450px;
+        }
+        .prvi {
+            background-color: aqua;
+            border: 4px solid black; /* ravne linije za okvir tablice- solid*/
+            border-top: 8px solid black;
+           /*  padding: 30px 15px 30px 15px; */ /* <- u smjeru kazaljke na satu; GORE DESNO DOLE LIJEVO*/
+           /* padding: 30px 15px; */ /* <- gleda dvije vrijednosti, u smjeru kazaljke na satu; GORE I DOLE pa DESNO I LIJEVO */
+           padding: 50px; /* sa svih strana je isto */
+           margin-bottom: 30px;
+        }
+        .drugi {
+            background-color: chartreuse;
+            border: 3px dashed black; /* iscrtkani okvir tablice- dashed */
+            /* border-radius: 50%;*/ /* ovo je samo za krug */
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div class="prvi">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo consequuntur dolorum molestiae beatae,
+         dolore ipsa nisi in laborum rerum veritatis, dolores officia dolor repellendus minus asperiores corporis 
+         fugit pariatur sit.</p>
+    </div>
+    <div class="drugi">
+        <p>Ovo je drugi div element.</p>
+    </div>
+</body>
+</html>
