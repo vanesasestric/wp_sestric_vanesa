@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* za davanje širine kolonama(reda) */
+            grid-template-rows: 1fr 1fr; /* omjeri redova ako su isti */
+            gap: 10px
+        }
+
+        p {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container i ENTER nam daje naredbu -->
+    <div class="container">   
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque doloremque quidem labore eveniet odit eos ratione tenetur impedit necessitatibus, iste itaque ex, rerum veritatis numquam vel mollitia! Non, fugit expedita!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae nemo laborum minus consequuntur corrupti excepturi magni vero nihil atque explicabo delectus accusantium, blanditiis assumenda error dolor, est maxime, similique cupiditate.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab excepturi quos eveniet obcaecati, quidem autem, ullam et modi eos corrupti, pariatur soluta! Ab adipisci iusto deserunt quas praesentium totam fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ratione in facere non doloremque repudiandae facilis quasi assumenda exercitationem odio temporibus, consequatur minus ab asperiores aspernatur harum, quaerat consequuntur praesentium!</p>
+    </div>
+</body>
+</html>
