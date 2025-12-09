@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Informacije o gradu">
+    <meta name="author" content="Vanesa Sestrić">
+    <title>Zadaća 4</title>
+    <style>
+        .card {
+            background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333333;
+            border-radius: 6px;
+            position: relative;
+            display: inline-block;
+        }
+        .card1 {
+            background-color: hotpink;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333333;
+            border-radius: 6px;
+            position: relative;
+            display: inline-block;
+        }
+        .card2 {
+            background-color: mediumslateblue;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333333;
+            border-radius: 6px;
+            position: relative;
+            display: inline-block;
+        }
+        .card p {
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            color: #333333;
+        }
+          .card1 p {
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            color: #333333;
+        }
+        .card2 p {
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            color: #333333;
+        }
+        .Dodatneinformacije {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            padding: 10px;
+            margin: 5px;
+            border-bottom-right-radius: 6px;
+            background-color: aliceblue;
+        }
+    
+        .plava {
+            background-color: blue;
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+        .yellow_horizontal {
+            background-color: yellow;
+            width: 60px;
+            height: 300px;
+            position: absolute;
+            left: 140px;
+        }
+        .yellow_vertikal {
+            background-color: yellow;
+            height: 60px;
+            width: 500px;
+            position: absolute;
+            bottom: 110px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="card">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv grada: Daruvar</p>
+        <p>Država: Hrvatska</p>
+        <p>Populacija: 10,159</p>
+
+        <p class="Dodatneinformacije">
+            <a href="https://hr.wikipedia.org/wiki/Daruvar" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+
+    <div class="card1">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv grada: Osijek</p>
+        <p>Država: Hrvatska</p>
+        <p>Populacija: 96,313</p>
+
+        <p class="Dodatneinformacije">
+            <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+
+    <div class="card2">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv grada: Vukovar</p>
+        <p>Država: Hrvatska</p>
+        <p>Populacija: 22,255</p>
+
+        <p class="Dodatneinformacije">
+            <a href="https://hr.wikipedia.org/wiki/Vukovar" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+    <h1>Zastava Švedske</h1>
+    <div class="plava">
+        <div class="yellow_horizontal"></div>
+        <div class="yellow_vertikal"></div>
+    </div>
 </body>
 </html>
