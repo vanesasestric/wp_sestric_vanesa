@@ -3,9 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Ukusni recepti">
+    <meta name="author" content="Vanesa Sestrić">
+    <title>Ukusni recepti</title>
+   <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: beige;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
+nav {
+    background-color: rosybrown;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffa94d;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-areas:
+        "predjelo predjelo"
+        "glavno desert";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* GRID AREAS */
+#predjela { grid-area: predjelo; }
+#glavna   { grid-area: glavno; }
+#deserti  { grid-area: desert; }
+
+/* SECTIONS */
+section h2 {
+    color: hotpink;
+    margin-bottom: 15px;
+}
+
+/* RECEPT */
+.recept {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.recept img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* LISTE */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+
+    .grid {
+        grid-template-areas:
+            "predjelo"
+            "glavno"
+            "desert";
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+    }
+}
+   </style>
+
 </head>
 <body>
-    
+    <header>
+    <h1>MOJI OMILJENI RECEPTI</h1>
+    <p>Jednostavna jela koja volim!</p>
+</header>
+
+<nav>
+    <a href="#predjela">Predjelo</a>
+    <a href="#glavna">Glavno jelo</a>
+    <a href="#deserti">Desert</a>
+</nav>
+
+<main>
+<div class="grid">
+    <section id="predjela">
+    <h2>PREDJELO</h2>
+
+    <div class="recept">
+        <img src="https://recepti-api.index.hr/img/preview/large/recipe/a46996b4-9fdb-4998-9bfa-acb619d898bc/shutterstock_1907487031.jpg" alt="Salata"/>
+        <p><strong>SALATA S TUNOM</strong><br>
+        Brza salata idealna za ljeto.</p>
+        <p>POTREBNI SASTOJCI:</p>
+        <ul>
+            <li>50 g crnih maslina</li>
+            <li>150 g pečene paprike</li>
+            <li>1 veća konzerva tunjevine u salamuri</li>
+            <li>250 g skuhane tjestenine</li>
+            <li>3 žlice maslinovog ulja</li>
+            <li>2 žlice jabučnog octa</li>
+            <li>1 žličica senfa s cijelim sjemenkama gorušice</li>
+            <li>0,5 ml svježe iscjeđenog soka od naranče</li>
+            <li>sol</li>
+            <li>papar</li>
+        </ul>
+        <p>PRIPREMA:</p>
+        <ol>
+            <li>Crne masline narežite na kolutiće, a pečenu papriku na trakice. Ocijedite tunjevinu iz konzerve. Ohlađenu skuhanu tjesteninu stavite u zdjelu i dodajte ostale pripremljene sastojke za salatu.</li>
+            <li>Maslinovo ulje, jabučni ocat, senf s cijelim sjemenkama gorušice, svježe iscijeđeni sok naranče, sol i papar stavite u jednu manju staklenku, zatvorite i dobro protresite oko 30 sekundi. Možete raditi dresing i s pjenjačom u zdjelici, no ovaj je način jednostavan i brz, a ako mislite da ste ga napravili previše, samo ostavite dio u staklenci i čuvajte u hladnjaku do dva dana.</li>
+            <li>Pripremljenu salatu prelijte izmiješanim dresingom, promiješajte i prije posluživanja dobro ohladite.</li>
+        </ol>
+    </div>
+    </section>
+
+    <section id="glavna">
+    <h2>GLAVNO JELO</h2>
+
+    <div class="recept">
+        <img src="https://sjeverni.webmaster.com.hr/wp-content/uploads/2023/11/pexels-engin-akyurt-1437267-2048x1366.jpg" alt="Pasta"/>
+        <p><strong>TJESTENINA S UMAKOM OD RAJČICE</strong><br>
+        Jednostavna tjestenina s umakom.</p>
+        <p>POTREBNI SASTOJCI:</p>
+        <ul>
+            <li>200 g tjestenine</li>
+            <li>sol</li>
+            <li>1 glavica crvenog luka</li>
+            <li>2 žlice maslinovng ulja</li>
+            <li>4 žlice koncentrata rajčice</li>
+            <li>400 ml soka od rajčice</li>
+            <li>papar</li>
+            <li>čili samo za posluživanje</li>
+        </ul>
+        <p>PRIPREMA:</p>
+        <ol>
+            <li>Tjesteninu skuhati u slanoj vodi prema uputama na pakiranju.</li>
+            <li>Za umak od rajčice oguli luk i sitno ga nasjeckaj. </li>
+            <li>U loncu zagrij maslinovo ulje i oko 2 minute u njemu dinstaj luk. Dodaj koncentrat i sok od rajčice te pusti da se lagano kuha oko 10 minuta.</li>
+            <li>Dodaj umaku od rajčice i kuhaj oko 5 minuta. Zatim sve izmiksaj štapnim mikserom i začini solju i paprom.</li>
+            <li>Ocijedi tjesteninu i postavi je na tanjur za posluživanje i polij umakom koji je napravljen.</li>
+        </ol>
+    </div>
+    </section>
+
+
+    <section id="deserti">
+    <h2>DESERT</h2>
+
+    <div class="recept">
+        <img src="https://recepti-api.index.hr/img/preview/large/recipe/bb40d056-3542-4fa1-8da9-31b2284fcf3f/so%C4%8Dni%20%C4%8Doko1.jpg" alt="Kolač"/>
+        <p><strong>ČOKOLADNI KOLAČ</strong><br>
+        Slatki desert za kraj.</p>
+        <p>POTREBNI SASTOJCI:</p>
+        Biskvit:
+        <ul>
+            <li>7 jaja</li>
+            <li>200 g šećera</li>
+            <li>150 g glatkog brašna</li>
+            <li>50 g kakaa</li>
+            <li>60 g maslaca</li>
+        </ul>
+        Krema:
+        <ul>
+            <li>200 g tamne čokolade</li>
+            <li>130 g maslaca</li>
+            <li>4 žlice šećera u prahu</li>
+        </ul>
+        <p>PRIPREMA:</p>
+        <ol>
+            <li>Zagrijte pećnicu na 180°C. Pripremite kalup dužine 23-25 cm, onaj duguljasti za kruh ili kuglof. Stranice premažite maslacem i pospite sa malo brašna, a dno obložite papirom za pečenje.</li>
+            <li>Umutite jaja sa šećerom i pjenasto ih umutite.</li>
+            <li>U posebnoj posudi pomiješajte brašno i kakao te ih prosijte.</li>
+            <li>Istopite maslac (nemojte da zavrije) i malo ga prohladite.</li>
+            <li>U smjesu od jaja dodajte pola mješavine brašna i kakaa lagano izmiješajte špatulom pa dodajte istopljeni maslac i ostalu polovinu brašna.</li>
+            <li>Smjesu istresite u kalup i pecite oko 30 min. Provjerite čačkalicom je li smjesa pečena. Biskvit ostavite da se prohladi u kalupu, zatim ga izvadite i ohladite do kraja.</li>
+            <li>Razrežite vodoravno koru 3-4 puta. Kore možete malo natopiti i nekim sokom ili likerom, ali nije obavezno.</li>
+            <li>Za kremu istopite zajedno čokoladu i maslac pa dodajte 4 žlice šećera u prahu, izmješajte i ostavite na stranu da se ohladi.</li>
+            <li>Ohlađenu kremu sasvim malo umiksajte ,pa u tankom sloju premažite kore i slažite jednu preko druge. Na kraju premažite i okolo cijeli kolač te ukrasite po želji listićima badema.</li>
+        </ol>
+    </div>
+    </section>
+</div>
+
+</main>
+
 </body>
 </html>
