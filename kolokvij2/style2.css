@@ -1,0 +1,59 @@
+h1 {
+    font-family:"Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    color: #4CAF50;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ECEFF1
+}
+
+.tekst16 {
+    font-size: 16px;
+    color:#37474F;
+}
+
+.tekst18 {
+    font-size: 18px;
+    color:#546E7A;
+}
+
+.tekst20 {
+    font-size: 20px;
+    color: #78909C;
+}
+
+.markeri li.jedan::marker {
+    content: "☀ "; 
+}
+.markeri li.dva::marker {
+    content: "☂ "; 
+}
+.markeri li.tri::marker {
+    content: "♞ "; 
+}
+.markeri li.cetiri::marker {
+    content: "✈ "; 
+}
+
+.highlight {
+    color: #FFC107;
+}
+
+#main-title {
+    font-size: 4rem;
+}
+
+/* EKSTERNAL CSS */
