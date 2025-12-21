@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Kolokvij 2</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            color: whitesmoke;
+            background-color: darkseagreen;
+        }
+
+        h2 {
+            color: #FAF8F1;
+            background-color: #C58940;
+        }
+
+        p {
+            color: white;
+        }
+
+        .red {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .green {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .blue {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+
+        img {
+            float: left;
+            margin-right: 15px;
+        }
+
+        footer {
+            clear: both;
+            margin-bottom: 200px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px
+         }
+
+    .container>* {
+      background-color: cadetblue;
+    }
+
+        body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .item {
+      font-size: 5rem;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: blueviolet;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cowboy {
+      background-color: cadetblue;
+      grid-column: 1/ span 2;  /* SPAN- znači proširi */
+      /* grid-column-start: 1;
+      grid-column-end: 3; */
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+
+    .astronaut {
+      background-color: cornflowerblue;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .book {
+      background-color: orange;
+      grid-column: 3/ 4; /* skraćeno napisano gdje nam počinje, a gdje završava */
+      grid-row: 1/ 3;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>World</h2>
+    <h3>Display property</h3>
+    <p class="red">Red paragraph</p>
+    <p class="green">Green paragraph</p>
+    <p class="blue">Blue paragraph</p>
+    <br>
+    <img src="../slike/logo_s_f.png" alt="slika">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat, impedit eligendi dignissimos tenetur, inventore praesentium enim repellendus reiciendis culpa animi quidem sit ducimus optio id suscipit. Eius, repellendus expedita!</p>
+    <footer>Copyright UNISB</footer>   
+    
+    <h3>CSS Selectors</h3>
+  <h4>Applying CSS to Different Parts of HTML</h4>
+  <!-- TODO 1: Set the CSS for all paragraph tags to "color: red" -->
+  <p1 class="note">1. The element selector targets elements based on their HTML tag name.</p1>
+
+  <ol>
+    <!-- TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px" -->
+    <li class="note" value="2">Class selectors target elements based on the value of the class attribute.</li>
+
+    <!-- TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green" -->
+    <li class="note" id="id-selector-demo" value="3">ID selectors target elements based on the value of the id
+      attribute.</li>
+
+    <!-- TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue" -->
+    <li class="note" value="4">Attribute selectors target elements based on their attributes and values.</li>
+
+    <!-- TODO 5: Set all elements to have "text-align: center" -->
+    <li class="note" value="5">The universal selector targets all elements.</li>
+  </ol>
+    <div class="container">
+    <div class="one">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut error ea neque! Minima fuga deserunt delectus
+        corrupti molestiae, eos esse quos vel reiciendis neque quibusdam!</p>
+    </div>
+    <div class="two">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eius, consequuntur facere iure error fugiat
+        architecto illo, repudiandae magni doloremque non molestiae qui expedita iste!</p>
+    </div>
+    <div class="three">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae porro a harum in voluptate reprehenderit
+        necessitatibus, placeat cumque est odio accusamus! Quaerat nesciunt tempora dolorum voluptate ex dolor natus
+        fuga possimus totam ipsam, saepe odio nemo officia accusamus nam voluptates magnam soluta autem animi quia
+        veniam praesentium excepturi? Incidunt, quia.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, expedita ex culpa corporis quidem amet ducimus
+        aut facilis harum atque veniam similique facere quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+  </div>
+  <br><br>
+  <body>
+  <div class="container">
+    <div class="item cowboy">🤠</div>
+    <div class="item astronaut">👨‍🚀</div>
+    <div class="item book">📖</div>
+  </div>
+</body>
+</html>
