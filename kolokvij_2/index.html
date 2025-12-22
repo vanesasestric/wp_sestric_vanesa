@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. kolokvij</title>
+    <style>
+   .zastava {
+    width: 300px;
+    height: 200px;
+    display: flex;
+  }
+
+  .black {
+    background-color: #000000;
+    width: 33.33%;
+  }
+
+  .yellow {
+    background-color: #FFD100;
+    width: 33.33%;
+  }
+
+  .red {
+    background-color: #EF3340;
+    width: 33.33%;
+  }
+
+  .grid {
+         display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        gap: 10px;
+        margin-top: 40px;
+        }
+
+    .item {
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight:bold;
+    }
+    .box {
+    border: 1px solid black; 
+    padding: 15px;          
+    margin: 10px;           
+     }
+
+    .klasa1 {
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: lightblue;
+        }
+
+    .klasa2 {
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 10px;
+            background-color: rgb(219, 192, 201);
+        }
+
+    .klasa3 {
+            color:red;
+            font-style: italic;
+            background-color: aquamarine;
+        }
+
+    #id1 {
+            color: brown;
+            font-weight: bold;
+            background-color: lightcoral;
+        }
+
+    #id2 {
+            color: purple;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zastava Belgije</h1>
+   <div class="zastava">
+        <div class="black"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+    </div>
+    <br>
+    <div class="grid">
+        <div class="item">Grid 1</div>
+        <div class="item">Grid 2</div>
+        <div class="item">Grid 3</div>
+        <div class="item">Grid 4</div>
+        <div class="item">Grid 5</div>
+        <div class="item">Grid 6</div>
+        <div class="item">Grid 7</div>
+        <div class="item">Grid 8</div>
+        <div class="item">Grid 9</div>
+        <div class="item">Grid 10</div>
+        <div class="item">Grid 11</div>
+        <div class="item">Grid 12</div>
+        <div class="item">Grid 13</div>
+        <div class="item">Grid 14</div>
+        <div class="item">Grid 15</div>
+        <div class="item">Grid 16</div>
+    </div>
+
+    <div class="box">Prvi element</div>
+    <div class="box">Drugi element</div>
+    <div class="box">Treći element</div>
+    <div class="box">Četvrti element</div>
+
+    <p class="klasa1">Ovo je prvi paragraf s klasom.</p>
+    <p class="klasa2">Ovo je drugi paragraf s klasom.</p>
+    <p class="klasa3">Ovo je treći paragraf s klasom.</p>
+
+    <p id="id1">Ovo je paragraf s ID-om.</p>
+    <p id="id2">Ovo je drugi paragraf s ID-om.</p>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
