@@ -1,111 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osobna web stranica">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Vanesa Sestrić">
-    <title>Moja web stranica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanesa Sestrić - Osobna Stranica</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+body {
+    /* padding-top: 56px; */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+/* Hero sekcija s gradientom */
+.hero {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero h1 { font-size: 3rem; font-weight: 700; }
+.hero p { font-size: 1.3rem; }
+.section-title { margin-bottom: 40px; color: #333; }
+
+/* O meni sekcija */
+#o-meni .icon-person {
+    font-size: 120px;
+    color: #fff;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+@media(min-width: 768px) {
+    #o-meni .row { display: flex; align-items: center; }
+    #o-meni .col-md-4 { flex: 0 0 200px; max-width: 200px; margin-right: 30px; }
+}
+
+/* Hobiji kartice */
+.hobby-card { transition: transform 0.3s, box-shadow 0.3s; color: #333; }
+.hobby-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+.card-1 { background: #ffb3ba; }
+.card-2 { background: #bae1ff; }
+.card-3 { background: #baffc9; }
+.card p { color: #333; }
+.hobby-icon { font-size: 2.5rem; color: #333; margin-bottom: 10px; }
+strong { display: block; font-size: 1.25rem; margin-bottom: 5px; }
+
+/* Gumbi */
+.btn-info {
+    background-color: #56cfe1;
+    border-color: #56cfe1;
+    transition: background-color 0.3s;
+}
+.btn-info:hover {
+    background-color: #48bfe3;
+    border-color: #48bfe3;
+}
+
+/* Footer */
+footer { background: #f1f1f1; padding: 20px 0; text-align: center; color: #555; }
+
+/* Navigacija u boji */
+.navbar-nav .nav-link { transition: color 0.3s; }
+.navbar-nav .nav-link:hover { color: #ffd6a5; }
+.navbar-toggler-icon { filter: invert(1); }
+</style>
 </head>
 <body>
-    <h1>Zadaće</h1>
-    <ul>
-        <li><a href="./zadace/zadaca1.html">1. zadaća</a></li>
-        <li><a href="./zadace/zadaca2.html">2. zadaća</a></li>
-        <li><a href="./zadace/zadaca3.html">3. zadaća</a></li>
-        <li><a href="./zadace/zadaca4.html">4. zadaća</a></li>
-        <li><a href="./zadace/zadaca5.html">5. zadaća</a></li>
-        <li><a href="./zadace/zadaca6.html">6. zadaća</a></li>
-        <li><a href="./startbootstrap-freelancer-gh-pages/startbootstrap-freelancer-gh-pages/index.html">BOOTSTRAP</a></li>
+
+<!-- Navigacija -->
+<nav class="navbar navbar-expand-lg shadow-sm" style="background: linear-gradient(90deg, #56cfe1, #48bfe3);">
+<div class="container">
+  <a class="navbar-brand text-white fw-bold" href="#">Vanesa Sestrić</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link text-white" href="#o-meni">O meni</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#hobiji">Hobiji</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#zadace">Zadaće</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#kontakt">Kontakt</a></li>
     </ul>
-    <h1>Naslov 1</h1>
-    <h2>Naslov 2</h2>
-    <h3>Naslov 3</h3>
-    <h4>Naslov 4</h4>
-    <h5>Naslov 5</h5>
-    <h6>Naslov 6</h6>
-    <p>Od srijede <strong>8. listopada</strong> <br> <em>Fond za zaštitu okoliša i energetsku učinkovitost</em> 
-        (FZOEU) ponovno prima zahtjeve <sub>vlasnika</sub> malih sunčanih elektrana na obiteljskim kućama za 
-        sufinanciranje pripreme i gradnje elektrana. Riječ je o nastavku <mark>javnog natječaja</mark> 
-        FZOEU koji je <del>Fond</del>  objavio početkom <sup>lipnja</sup> ove godine.</p>
+  </div>
+</div>
+</nav>
 
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Facere aliquam commodi ipsa, laudantium nulla dolorem! Sequi dolores, 
-        illo repellat recusandae cupiditate sed quo, omnis debitis, soluta 
-        doloremque est similique saepe!</p>
-    <h3>Unoredered lista</h3>
-    <ul>
-        <li>2 jaja</li>
-        <li>brašno</li>
-        <li>ulje</li>
-        <li>mlijeko</li>
-    </ul>
-    <h3>Ordered lista</h3>
-    <ol type="a">
-        <li>Razbiti dva jaja</li>
-        <li>Dodati ulje i brašno</li>
-        <li>Poslije dodati mlijeko</li>
-    </ol>
-    <h3>Definition lista</h3>
-    <dl>
-        <dt>Napon</dt>
-        <dd>razlika potencijala između dvije točke</dd>
-        <dt>Struja</dt>
-        <dd>usmjereno gibanje elektrona kroz vodič</dd>
-    </dl>
-    <h1>Muffini</h1>
-    <h2>Sastojci</h2>
-    <ul>
-        <li>250 g brašna</li>
-        <li>50 g kakaa u prahu</li>
-        <li>1  prašak za pecivo</li>
-        <li>200 g šećera</li>
-        <li>1/2 komad čokolade za kuhanje</li>
-        <li>2 cijela jaja</li>
-        <li>100 ml ulja</li>
-        <li>250 ml mlijeka</li>
-    </ul>
-    <h2>Priprema</h2>
-    <ol>
-        <li>Umiješati brašno, kakao, prašak za pecivo i šećer.</li>
-        <li>Posebno umutiti jaja, mlijeko i ulje.</li>
-        <li>Dodajte u smjesu sa brašnom, kakaom, praškom za pecivo i šećerom i sve to zajedno umutiti.</li>
-        <li>Muffine peći na 200 stupnjeva, otprilike 15- 20 min.</li>
-    </ol>
-    <h3>Linkovi</h3>
-    <p>Web stranicu sveučilišta možete vidjeti <a href="https://www.unisb.hr/" target="_blank">ovdje.</a></p>
-    <!-- target blank otvara u novoj kartici -->
-     <p>Otvori link <a href="./linkovi/kontakt.html" target="_blank">kontakt</a></p>
+<!-- Hero sekcija -->
+<section class="hero">
+<div class="container">
+    <h1>Dobrodošli na moju stranicu!</h1>
+    <p>Ovdje možete saznati više o meni, mojim hobijima i radu na ovom predmetu.</p>
+</div>
+</section>
 
-     <h3>Dodavanje slika</h3>
-     <p>Slika sveučilišta</p>
-     <img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="slika sveučilišta">
-     <p>Slika iz našeg foldera</p>
-     <img src="./slike/logo_s_f.png" alt="slika sveučilišta" width="550px">
+<!-- O meni -->
+<section id="o-meni" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">O meni</h2>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-4 text-center mb-3">
+        <div class="icon-person">
+          <i class="bi bi-person-circle"></i>
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <p>Boook! Zovem se Vanesa Sestrić. Studentica sam 3. godine Učiteljskog studija u Slavonskom Brodu. U slobodno vrijeme volim crtati, šetati psa Zeusa, rolati, voziti kvad i svirati sintisajzer. Ova stranica prikazuje moj rad na predmetu te moje hobije i interese. Moja omiljena boja je ružičasta kao što se da primijetiti, ali volim nježnije/pastelne boje.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-     <h3>Mojih top 5 posjećenijih web stranica</h3>
-     <ol>
-        <li><a href="https://www.unisb.hr/" target="_blank">Stranica sveučilišta</a></li>
-        <li><a href="https://moodle.srce.hr/" target="_blank">Merlin</a></li>
-        <li><a href="https://mzom.gov.hr/istaknute-teme/odgoj-i-obrazovanje/visoko-obrazovanje/drzavne-stipendije/162" target="_blank">Državne stipendije</a></li>
-        <li><a href="https://voyo.rtl.hr/?gad_source=1&gad_campaignid=20491935809&gbraid=0AAAAAqE0boOF_WyHMi7bzv5aAewqPBFTX&gclid=CjwKCAjwxrLHBhA2EiwAu9EdM3VuFERjKlWW05g9_YDZuU9bWiNbSSxY0VqzK7jI8-fM4we85iqz_BoCVOMQAvD_BwE" target="_blank">Voyo</a></li>
-        <li><a href="https://www.netflix.com/hr-en/" target="_blank">Netflix</a></li>
-     </ol>
+<!-- Hobiji -->
+<section id="hobiji" class="py-5">
+<div class="container">
+<h2 class="section-title text-center">Hobiji i interesi</h2>
+<div class="row text-center g-4">
+    <div class="col-md-4">
+        <div class="card p-3 h-100 shadow-sm hobby-card card-1">
+            <div class="hobby-icon">🎨</div>
+            <strong>Umjetnost</strong>
+            <p>Volim crtati, slikati i kreativno izražavati ideje.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 h-100 shadow-sm hobby-card card-2">
+            <div class="hobby-icon">🐶</div>
+            <strong>Šetnje sa Zeusom</strong>
+            <p>Uživam u šetnjama sa svojim ljubimcem Zeusom i provođenju vremena u prirodi.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 h-100 shadow-sm hobby-card card-3">
+            <div class="hobby-icon">🛴🎹</div>
+            <strong>Rolanje, kvad, sviranje</strong>
+            <p>Volim rolam, vozim kvad i sviram sintisajzer u slobodno vrijeme.</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
 
-     <h1>Moj rođendan!</h1>
-     <h3>19.7.</h3>
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPz_ip_-KGrvPiDE7SucjTKTveil2WOJoA9A&s" alt="slika torte">
-     <h3>Sa sobom ponesi sljedeće:</h3>
-     <ul>
-        <li>Balone (Volim balone)</li>
-        <li>Igračku (Obožavam igračke)</li>
-        <li>Apetit (Bit će puno hrane)</li>
-     </ul>
-     <h3>Ovo je lokacija gdje trebaš doći:</h3>
-     <a href="https://maps.app.goo.gl/qvyfCDaSXEazSbD66">Link do karte</a>
+<!-- Zadaće -->
+<section id="zadace" class="py-5 bg-light">
+<div class="container">
+<h2 class="section-title text-center">Zadaće</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>1. zadaća</strong><a href="./zadace/zadaca1.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>2. zadaća</strong><a href="./zadace/zadaca2.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>3. zadaća</strong><a href="./zadace/zadaca3.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>4. zadaća</strong><a href="./zadace/zadaca4.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>5. zadaća</strong><a href="./zadace/zadaca5.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><strong>6. zadaća</strong><a href="./zadace/zadaca6.html" class="btn btn-info d-block mt-2">Pogledaj</a></div></div></div>
+</div>
+</div>
+</section>
 
-<!-- <script src="./index.js"></script> -->
+<!-- Kontakt -->
+<section id="kontakt" class="py-5">
+<div class="container">
+<h2 class="section-title text-center">Kontakt</h2>
+<div class="row justify-content-center">
+    <div class="col-md-6 mb-4">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Ime i prezime</label>
+                <input type="text" class="form-control" id="name" placeholder="Vaše ime i prezime">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@primjer.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Poruka</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info w-100">Pošalji</button>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+    <p>&copy; 2026 Vanesa Sestrić. Sva prava pridržana.</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
